@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "notes-app"
+version = "0.1.0"
+description = ""
+authors = ["Ihar Nikanovich <ignikanovich@gmail.com>"]
+readme = "README.md"
+packages = [{include = "notes_app"}]
+
+[tool.poetry.dependencies]
+python = "3.10.11"
+fastapi = "^0.103.1"
+uvicorn = "^0.23.2"
+sqlalchemy = "^2.0.21"
+psycopg2-binary = "^2.9.7"
+pydantic-settings = "^2.0.3"
+asyncpg = "^0.28.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
